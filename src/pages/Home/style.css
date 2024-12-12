@@ -1,0 +1,956 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.global-nav {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  background-color: rgba(23, 22, 22, 0.868);
+  backdrop-filter: blur(10px);
+
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
+.global-nav-itens {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+
+  & li {
+    display: block;
+    list-style-type: none;
+  }
+
+  & .nav {
+    display: none;
+  }
+
+}
+
+
+.globalnav-image-regular {
+  display: none;
+}
+
+.globalnav-image-compact {
+  display: flex;
+
+  position: absolute;
+  left: 15px;
+  top: -5%;
+}
+
+.button-search,
+.button-bag {
+  display: flex;
+}
+
+.button-menu {
+  display: flex;
+  margin-right: 15px;
+}
+
+.wrapper-iphone-16-pro,
+.wrapper-iphone-16,
+.wrapper-tv-plus-disclaimer,
+.wrapper-mackbook-pro,
+.wrapper-mac-mini,
+.wrapper-imac,
+.wrapper-ai,
+.wrapper-tradein,
+.wrapper-carousel {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  overflow: hidden;
+}
+
+.module-content-iphone16pro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  min-height: 80vh;
+  background-image: url('../../assets/home-heroes/iphone-16-pro-images/hero_iphone16pro_small.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  & .text-iphone-16-pro {
+    position: relative;
+    top: 360px;
+
+    & h1 {
+      text-align: center;
+      font-size: 2em;
+    }
+
+    & p {
+      font-size: 1.15em;
+      margin-top: -5px;
+    }
+  }
+
+  & .button-iphone-16-pro {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+    justify-content: center;
+    position: relative;
+    top: 350px;
+
+    & .button-learn {
+      padding: 6px 18px;
+      font-size: 14px;
+      color: white;
+      background-color: #0077ED;
+      border-radius: 20px;
+    }
+
+    & .button-buy {
+      padding: 5px 18px;
+      font-size: 14px;
+      color: #0077ED;
+      background-color: rgba(255, 255, 255, 0);
+      border: 1px solid #0077ED;
+      border-radius: 20px;
+    }
+
+    & .button-buy:hover {
+      background-color: #0077ED;
+      color: white;
+    }
+  }
+}
+
+
+.module-content-iphone16 {
+  display: flex;
+  margin-top: 15px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  min-height: 80vh;
+  background-image: url('../../assets/home-heroes/iphone-16-images/hero_iphone16_small_2x.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  & .text-iphone-16 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+
+    position: relative;
+    z-index: 1;
+
+    & h1 {
+      text-align: center;
+      font-size: 2em;
+    }
+
+    & p {
+      font-size: 1.15em;
+      margin-top: -5px;
+    }
+  }
+
+  & .button-iphone-16 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+
+    position: relative;
+    z-index: 1;
+
+    & .button-learn {
+      padding: 6px 18px;
+      font-size: 14px;
+      color: rgb(0, 0, 0);
+      background-color: white;
+      border-radius: 20px;
+    }
+
+    & .button-buy {
+      padding: 5px 18px;
+      font-size: 14px;
+      color: white;
+      background-color: rgba(255, 255, 255, 0);
+      border: 1px solid white;
+      border-radius: 20px;
+    }
+
+    & .button-buy:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+}
+
+.module-content-tv-plus-disclaimer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  min-height: 80vh;
+  background-image: url('../../assets/home-heroes/tv-plus-disclaimer/hero_disclaimer_small.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  & .info-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 230px;
+    height: 200px;
+    width: 100%;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    & .tv-plus-icon {
+      background-image: url('../../assets/logos/tv-plus/hero-logo-theme-dark_small.png');
+      background-size: cover;
+      width: 90px;
+      height: 35px;
+
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    & .logo-disc {
+      background-image: url('../../assets/logos/yv-plus-disclaimer/logo_disclaimer_small.png');
+      background-size: cover;
+      height: 30px;
+      width: 250px;
+
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+    }
+  }
+
+  & .info-bottom {
+    margin-top: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .button-stream-now {
+      display: flex;
+      justify-content: center;
+      border: none;
+      border-radius: 40px;
+      width: 150px;
+      padding: 10px 20px;
+      font-size: 14px;
+
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .button-stream-now:hover {
+      background-color: black;
+      color: white;
+      border: none;
+    }
+  }
+}
+
+.module-content-macbook-pro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+  min-height: 500px;
+  background-image: url('../../assets/promos/macbook-pro/promo_macbookpro_small.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  & .unit-text-top {
+    width: 100%;
+    color: white;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    & h1 {
+      text-align: center;
+      font-size: 2em;
+    }
+
+    & p {
+      font-size: 1.15em;
+      margin-top: -5px;
+    }
+  }
+
+  & .unit-button-top {
+    display: flex;
+    margin: 0px 0px 290px 0px;
+    gap: 15px;
+    width: 100%;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    & .button-learn {
+      padding: 6px 18px;
+      font-size: 14px;
+      color: #ffffff;
+      background-color: #0077ED;
+      border-radius: 20px;
+    }
+
+    & .button-buy {
+      padding: 5px 18px;
+      font-size: 14px;
+      color: #0077ED;
+      background-color: #ffffff00;
+      border: 1px solid #0077ED;
+      border-radius: 20px;
+    }
+
+    & .button-buy:hover {
+      background-color: #0077ED;
+      color: #ffffff;
+    }
+  }
+}
+
+.unit-text-bottom {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  color: #ffffff;
+
+  & p {
+    display: inline-block;
+    font-size: 0.94em;
+
+    background: linear-gradient(94deg, #0090F7, #BA62FC, #F2416B, #F55600);
+    background-clip: text;
+    --webkit-background-clip: text;
+    color: transparent;
+    --webkit-text-fill-color: transparent;
+  }
+}
+
+.module-content-mac-mini {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+  min-height: 80vh;
+  background-image: url('../../assets/promos/mac-mini/promo_macmini_small.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  & .unit-text-top-mac-mini {
+    width: 100%;
+    margin-top: 0px;
+    color: black;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    & h1 {
+      text-align: center;
+      font-size: 1.9em;
+    }
+
+    & p {
+      font-size: 1.15em;
+      margin-top: -5px;
+    }
+  }
+
+  & .unit-button-top-mac-mini {
+    display: flex;
+    margin: 20px auto 340px;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+
+    & .button-learn {
+      padding: 6px 18px;
+      font-size: 14px;
+      color: #ffffff;
+      background-color: #0077ED;
+      border-radius: 20px;
+    }
+
+    & .button-buy {
+      padding: 5px 18px;
+      font-size: 14px;
+      color: #0077ED;
+      background-color: #ffffff00;
+      border: 1px solid #0077ED;
+      border-radius: 20px;
+    }
+
+    & .button-buy:hover {
+      background-color: #0077ED;
+      color: #ffffff;
+    }
+  }
+}
+
+.module-content-imac {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+  min-height: 80vh;
+  background-image: url('../../assets/promos/imac/promo_imac_small.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  & .unit-text-top-imac {
+    width: 100%;
+    color: black;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    & h1 {
+      text-align: center;
+      font-size: 1.9em;
+    }
+
+    & p {
+      font-size: 1.15em;
+      margin-top: -5px;
+    }
+
+    & .c1 {
+      color: #3e935c;
+    }
+
+    & .c2 {
+      color: #edd142;
+    }
+
+    & .c3 {
+      color: #e3704b;
+    }
+
+    & .c4 {
+      color: #de5f7d;
+    }
+
+    & .c5 {
+      color: #827eb2;
+    }
+
+    & .c6 {
+      color: #547eae;
+    }
+  }
+
+  & .unit-button-top-imac {
+    display: flex;
+    margin: 20px 0px 330px 0px;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+
+    & .button-learn {
+      padding: 6px 18px;
+      font-size: 14px;
+      color: #ffffff;
+      background-color: #0077ED;
+      border-radius: 20px;
+    }
+
+    & .button-buy {
+      padding: 5px 18px;
+      font-size: 14px;
+      color: #0077ED;
+      background-color: #ffffff00;
+      border: 1px solid #0077ED;
+      border-radius: 20px;
+    }
+
+    & .button-buy:hover {
+      background-color: #0077ED;
+      color: #ffffff;
+    }
+  }
+}
+
+.module-content-ai {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+  min-height: 80vh;
+  background-image: url('../../assets/promos/apple-intelligence/promo_ai_small.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  & .unit-text-top-ai {
+    width: 100%;
+    margin-top: 20px;
+    color: black;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    & h1 {
+      text-align: center;
+      font-size: 1.9em;
+    }
+
+    & p {
+      font-size: 1.15em;
+      margin-top: -5px;
+    }
+
+  }
+
+  & .unit-button-top-ai {
+    display: flex;
+    margin-top: 20px;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+
+    & .button-learn {
+      padding: 6px 18px;
+      font-size: 14px;
+      color: #ffffff;
+      background-color: #0077ED;
+      border-radius: 20px;
+    }
+
+    & .button-watch {
+      padding: 5px 18px;
+      font-size: 14px;
+      color: #0077ED;
+      background-color: #ffffff00;
+      border: 1px solid #0077ED;
+      border-radius: 20px;
+    }
+
+    & .button-buy:hover {
+      background-color: #0077ED;
+      color: #ffffff;
+    }
+  }
+}
+
+.module-content-tradein {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+  min-height: 80vh;
+  background-image: url('../../assets/promos/iphone-tradein/promo_iphone_tradein_small.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  & .unit-text-top-tradein {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    color: black;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    & .logo-trade-in {
+      width: 130px;
+    }
+
+    & p {
+      margin-top: -10px;
+      width: 85%;
+      text-align: center;
+      font-size: 1.15em;
+    }
+
+  }
+
+  & .unit-button-top-tradein {
+    display: flex;
+    margin-top: 10px;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+
+    & .button-get {
+      padding: 6px 18px;
+      font-size: 14px;
+      color: #ffffff;
+      background-color: #0077ED;
+      border-radius: 20px;
+    }
+  }
+}
+
+.module-content-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+  min-height: 80vh;
+  background-image: url('../../assets/promos/apple-card/promo_apple_card_small.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  & .unit-text-top-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    margin-top: -200px;
+    color: black;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    & .logo-card {
+      width: 90px;
+    }
+  }
+
+  & .unit-button-top-card {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+
+    & .button-learn {
+      padding: 6px 18px;
+      font-size: 14px;
+      color: #ffffff;
+      background-color: #0077ED;
+      border-radius: 20px;
+    }
+
+    & .button-apply {
+      padding: 5px 18px;
+      font-size: 14px;
+      color: #0077ED;
+      background-color: rgba(255, 255, 255, 0);
+      border: 1px solid #0077ED;
+      border-radius: 20px;
+    }
+
+    & .button-apply:hover {
+      background-color: #0077ED;
+      color: white;
+    }
+  }
+}
+
+.module-content-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 97vw;
+
+  position: relative;
+
+  & .carousel-inner {
+    overflow: hidden;
+    display: flex;
+
+
+    & .images {
+      display: flex;
+      width: 100vw;
+      height: 429px;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      flex-direction: row;
+      position: relative;
+
+      & .img {
+        display: flex;
+        padding: 10px;
+        width: 100vw;
+        object-fit: cover;
+      }
+    }
+
+    & .logo-plus {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 10px;
+
+      position: absolute;
+      top: 60px;
+
+      & .logos-tv-plus {
+        display: flex;
+        margin-left: 50%;
+        width: 100vw;
+        align-items: center;
+        position: relative;
+        gap: 216px;
+
+        & .logo {
+          display: flex;
+          width: 160px;
+          object-fit: cover;
+        }
+      }
+    }
+
+    & .logo-tv-apple {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 10px;
+
+      position: absolute;
+      top: 20px;
+
+      & .logo-tv-plus-apple {
+        display: flex;
+        margin-left: 50%;
+        width: 100vw;
+        align-items: center;
+        position: relative;
+        gap: calc(100% - 75px);
+
+        & .logo-tv-icon {
+          display: flex;
+          width: 75px;
+          object-fit: cover;
+        }
+      }
+    }
+
+    & .text-bottom-tv-plus {
+      display: flex;
+      flex-direction: row;
+
+      position: absolute;
+      bottom: 50px;
+
+      & .tx-genre-bottom {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        & .genreDescrip {
+          width: 100vw;
+          color: white;
+          font-size: 16px;
+          font-weight: 500;
+          padding: 0px 5px;
+
+          position: absolute;
+
+          transform: translateY(100%);
+          transition: all 0.6s ease-in-out;
+
+          & p {
+            margin: 0px;
+            text-align: center;
+            width: 100%;
+          }
+
+          & .descrip {
+            font-weight: 400;
+          }
+
+          & .button-tv-plus {
+            margin: 15px auto 40px;
+            font-size: 12px;
+            font-weight: 400;
+            padding: 6px 20px;
+            border-radius: 30px;
+
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+
+        .genreDescrip.active {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+    }
+
+    & .prev-next-button {
+      display: flex;
+      justify-content: space-between;
+      z-index: 10;
+      height: 420px;
+      position: absolute;
+      left: 2px;
+      top: 0px;
+      right: 2px;
+      margin-left: -15px;
+      flex-direction: row;
+      align-items: center;
+
+      & button {
+        background: none;
+        height: 400px;
+      }
+
+      & button:hover {
+        border: none;
+      }
+    }
+
+    & .button-carousel {
+      height: 23px;
+      width: 23px;
+      color: #353535;
+    }
+  }
+
+  & .indicator-carousel {
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    & .indicator {
+      display: flex;
+      padding: 2px 3px;
+      border-radius: 50%;
+
+      & button {
+        background-color: transparent;
+        margin-right: -20px;
+
+        & div {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: #949494;
+        }
+      }
+
+      & button:hover {
+        border: none;
+      }
+    }
+  }
+}
+
+footer {
+  position: relative;
+  margin-top: -30px;
+
+  & .rulesAndConditions {
+    padding: 15px;
+    text-align: start;
+    font-size: 12px;
+    height: 100%;
+    background-color: #f1f1f1;
+    color: #807f7f;
+  }
+
+  & .myInformations {
+    text-align: center;
+    color: #353535;
+    font-size: 13px;
+  }
+
+  & .myInformationsLink {
+    text-decoration: none;
+    color: rgb(35, 35, 35);
+    font-size: 13px;
+  }
+
+  & .myInformationsLink:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+figcaption {
+  display: none;
+}
