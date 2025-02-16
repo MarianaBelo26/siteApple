@@ -11,7 +11,7 @@
  
 <h2>My Project</h2>
 
-<h3 align="center">Project <a href='#' target='_blank'>Clone of the Apple Home Page</a></h3>
+<h3 align="center">Project <a href='https://marianabelo26.github.io/siteApple/' target='_blank'>Clone of the Apple Home Page</a></h3>
 <p align="center">
   <img alt="projeto Dev Links" src="apple.png" width="30%">
 </p>
