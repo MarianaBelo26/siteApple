@@ -7,7 +7,7 @@
 <br>
  [LinkedIn](https://linkedin.com/in/marianabelo26/)
  <br>
- [Instagram](https://instagram.com/mariana_.belo)
+ [Instagram](https://instagram.com/marianabelo.__)
  
 <h2>My Project</h2>
 
