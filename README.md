@@ -1,22 +1,62 @@
+<h1 align="center">🍎 Apple Website</h1>
 
-<h1 align="center">Project Apple Website</h1>
+## 📲 Acesse / Access
 
- ## 📲Acesse
- 
- <strong>My contacts:</strong>
-<br>
- [LinkedIn](https://linkedin.com/in/marianabelo26/)
- <br>
- [Instagram](https://instagram.com/marianabelo.__)
- 
-<h2>My Project</h2>
+**Contatos / Contacts:**
 
-<h3 align="center">Project <a href='https://marianabelo26.github.io/siteApple/' target='_blank'>Clone of the Apple Home Page</a></h3>
+- [LinkedIn](https://linkedin.com/in/marianabelo26/)
+- [Instagram](https://instagram.com/marianabelo.__)
+- [Portfólio Web (live)](https://marianabelo.netlify.app/)
+
+---
+
+## 💻 Projeto / Project
+
+### 🖥️ [Apple Website](https://marianabelo26.github.io/siteApple/)
+
 <p align="center">
-  <img alt="projeto Dev Links" src="apple.png" width="30%">
+  <img alt="website Screenshot" src="./apple.png" width="60%">
 </p>
 
-## 💻 Projeto
+O clone do site da Apple é um projeto pessoal com o objetivo de aprender a programar com React.
 
 The Apple Website Clone is a personal project with the goal of learning the programming language React.js.
-<hr>
+
+
+---
+
+## 🚀 Tecnologias / Tech Stack
+
+- HTML5
+- CSS3
+- React
+- JavaScript
+- Git & GitHub
+
+---
+
+## 📷 Preview
+
+<p align="center">
+  <img src="./preview.gif" width="80%" alt="Website Preview GIF"/>
+</p>
+
+---
+
+## 🤝 Conecte-se / Let's connect!
+
+Sinta-se à vontade para me chamar em qualquer rede para conversarmos sobre projetos, freelas ou oportunidades de trabalho.
+
+Feel free to reach out to me on any platform to talk about projects, freelancing, or job opportunities.
+
+---
+
+## 🪪 Autor / Author
+
+**Mariana Belo**  
+🌍 Front-end Developer  
+📍 Teixeira de Freitas, BA – Brazil  
+📧 mariana.belo26@hotmail.com
+
+---
+
